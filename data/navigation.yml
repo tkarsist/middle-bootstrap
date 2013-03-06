@@ -1,0 +1,15 @@
+---
+navitems:
+  -
+   navitem:
+     title: "Etusivu"
+     link: "frontpage.html"
+  -
+   navitem:
+     title: "Sivu2"
+     link: "page2.html"
+  -
+   navitem:
+     title: "StyleGuide"
+     link: "styleguide.html"     
+---
