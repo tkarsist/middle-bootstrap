@@ -10,14 +10,24 @@ navitems:
      link: "page2.html"     
 ---
 %header
-  .nav-container
-    %nav
-      %ul
-        - data.navigation.navitems.each do |s|
-          -if selected == s.navitem.title
-            %li{:class => 'selected'}
-              =link_to s.navitem.title, s.navitem.link, :relative =>true
-          -else
-            %li
-              =link_to s.navitem.title, s.navitem.link, :relative =>true
+  .navbar
+    .navbar-inner
+      .container
+        %a{:class=>['btn', 'btn-navbar'], :data=>{:toggle=>'collapse', :target=>'.navbar-responsive-collapse'}}
+          %span{:class=>'icon-bar'}
+          %span{:class=>'icon-bar'}
+          %span{:class=>'icon-bar'}
+        %a{:class=>'brand', :href=>"#"}
+          Talentbase
+        .nav-collapse.collapse.navbar-responsive-collapse
+          %nav
+            %ul.nav
+              - data.navigation.navitems.each do |s|
+                -if selected == s.navitem.title
+                  %li{:class => 'active'}
+                    =link_to s.navitem.title, s.navitem.link, :relative =>true
+                -else
+                  %li
+                    =link_to s.navitem.title, s.navitem.link, :relative =>true
+                
 

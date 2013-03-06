@@ -2,14 +2,26 @@
 navitems:
   -
    navitem:
-     title: "Etusivu"
+     title: "Services"
      link: "frontpage.html"
   -
    navitem:
-     title: "Sivu2"
+     title: "Partnerships"
      link: "page2.html"
   -
    navitem:
-     title: "StyleGuide"
-     link: "styleguide.html"     
+     title: "Events"
+     link: "styleguide.html"
+  -
+   navitem:
+     title: "About"
+     link: "styleguide.html"
+  -
+   navitem:
+     title: "Contact"
+     link: "styleguide.html"          
+  -
+   navitem:
+     title: "Blog"
+     link: "styleguide.html"
 ---
